@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #0B1437; */
+    /* background-color: #E5E5E5; */
+
+    /* past the color #E5E5E5 on the white color*/
+}
+
+.img-login {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+}

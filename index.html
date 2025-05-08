@@ -3,45 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
     <link rel="stylesheet" href="./public/css/main.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="icon" type="image/png" href="./public/imgs/logo_blue.jpg">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="./public/css/style.css">
     <title>Login - Car Rental Company</title>
 </head>
-<body class="">
+<body>
 
-    <section>
-        <div class="flex justify-center items-center p-6">
-            <img src="./public/imgs/full-bronco.jpg" alt="Car Rental Company Logo" class="rounded-3xl">
-        </div>
+    <section class="w-full h-screen sm:flex sm:flex-wrap">
 
-        <section class="w-full p-6">
+        <div class="sm:w-1/2 sm:order-2 w-full sm:flex sm:justify-center sm:items-center">
 
-            <div class="pb-6">
-                <h2 class="text-2xl font-bold mb-6 text-start">Bienvenido Admin 👋</h2>
-                <p>
-                    Hoy es un nuevo día. Es tu día. Tú le das forma. Inicia sesión para empezar a gestionar tu día. 🔆
-                </p>
+            <div class="flex justify-center sm:p-6">
+                <img src="./public/imgs/e2.jpeg" class="img-login hidden rounded-3xl sm:block">
             </div>
+    
+            <div class="flex justify-center items-center">
+                <img src="./public/imgs/full-bronco.jpg" class="w-7xl block rounded-4xl m-4 p-4 sm:hidden max-w-96 min-w-60">
+            </div>
+        </div>
+    
+        <section class="w-full sm:w-1/2 sm:flex sm:justify-center sm:items-center">
+            <div class="flex flex-col px-6 w-full sm:max-w-96">
+                <div class="sm:pb-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-4 text-start">Welcome Back Admin 👋</h2>
+                    <p class="text-sm">
+                        Hoy es un nuevo día. Es tu día. Tú le das forma. Inicia sesión para empezar a gestionar tu día. 🔆
+                    </p>
+                </div>
+    
+                <form action="/login" method="POST">
+                    <div class="mb-4">
+                        <label for="username" class="block text-sm font-medium text-gray-700">Usuario</label>
+                        <input type="text" id="username" name="username" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Ingresa tu usuario">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                        <input type="password" id="password" name="password" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="m-4 mr-0 flex justify-end">
+                        <a href="#" class="text-blue-500 hover:underline text-xs font-bold">Forgot your password?</a>
+                    </div>
+                    <!-- <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-md hover:bg-red-600 transition duration-200">Inicio</button> -->
+                     <a href="./pages/home.html" class="w-full bg-blue-700 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200 block text-center">Inicio</a>
+                </form>
 
-            <form action="/login" method="POST">
-                <div class="mb-4">
-                    <label for="username" class="block text-sm font-medium text-gray-700">Usuario</label>
-                    <input type="text" id="username" name="username" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Ingresa tu usuario">
-                </div>
-                <div class="mb-4">
-                    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
-                    <input type="password" id="password" name="password" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Ingresa tu contraseña">
-                </div>
-                <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-md hover:bg-red-600 transition duration-200">Login</button>
-            </form>
+                <div class="py-6 text-gray-400 text-sm text-center sm:text-start">
+                    <p> @ 2024 Copyright All Rights Reserved.</p>
+
+                    <p class="text-black">
+                        code by <a class="text-blue-500" href="https://oscoco.github.io/newprofile/"> Oscar.dev </a>
+                    </p>
+                </div> 
+            </div>
         </section>
     </section>
 </body>
-<footer class="w-full absolute bottom-0">
-    <div class="flex justify-center items-center p-6">
-        <p> @ 2024 Copyright All Rights Reserved.</p>
-    </div>   
-</footer>
 </html>
