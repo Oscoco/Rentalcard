@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="src/output.css">
+    <title>Login - Car Rental Company</title>
+</head>
+<body class="">
+
+    <section>
+        <div class="flex justify-center items-center p-6">
+            <img src="./public/imgs/full-bronco.jpg" alt="Car Rental Company Logo" class="rounded-3xl">
+        </div>
+
+        <section class="w-full p-6">
+
+            <div class="pb-6">
+                <h2 class="text-2xl font-bold mb-6 text-start">Bienvenido Admin 👋</h2>
+                <p>
+                    Hoy es un nuevo día. Es tu día. Tú le das forma. Inicia sesión para empezar a gestionar tu día. 🔆
+                </p>
+            </div>
+
+            <form action="/login" method="POST">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700">Usuario</label>
+                    <input type="text" id="username" name="username" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Ingresa tu usuario">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-md hover:bg-red-600 transition duration-200">Login</button>
+            </form>
+        </section>
+    </section>
+</body>
+<footer class="w-full absolute bottom-0">
+    <div class="flex justify-center items-center p-6">
+        <p> @ 2024 Copyright All Rights Reserved.</p>
+    </div>   
+</footer>
+</html>
